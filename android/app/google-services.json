@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "29645529824",
+    "project_id": "nsfw-playground",
+    "storage_bucket": "nsfw-playground.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:29645529824:android:2ec0a25cd6f47d0d716685",
+        "android_client_info": {
+          "package_name": "com.example.myapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAINYG6Kx-tO2PsODJOpMawxIo9vPomd_8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
