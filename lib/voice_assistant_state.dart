@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:myapp/gemini_service.dart';
-import 'package:provider/provider.dart';
 
 class VoiceAssistantState extends ChangeNotifier {
   final GeminiService _geminiService = GeminiService();

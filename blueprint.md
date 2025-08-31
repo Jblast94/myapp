@@ -15,22 +15,42 @@ This project is a voice assistant that uses the Google Agent Framework with a Ge
     *   Centralized `ThemeData` for both light and dark themes.
 *   **UI:**
     *   A simple home page with a theme toggle button.
+*   **Firebase Integration:**
+    *   `firebase_core` and `firebase_ai` dependencies added.
+    *   Firebase initialized in `main.dart`.
+*   **Dependencies:**
+    *   `google_fonts` for custom typography.
+    *   `provider` for state management.
 
 ### Current Plan
 
-1.  **Firebase Integration:**
-    *   Add `firebase_core` and `firebase_ai` dependencies.
-    *   Initialize Firebase in `main.dart`.
-2.  **Voice Assistant UI:**
-    *   Create a dedicated screen for the voice assistant.
-    *   Add buttons for starting and stopping recording.
-    *   Display the conversation history.
-3.  **Gemini Service:**
-    *   Create a service to interact with the Gemini API.
-    *   Implement text generation from prompts.
-    *   Implement multimodal input (text and audio).
-4.  **State Management:**
-    *   Use `provider` to manage the state of the voice assistant.
-5.  **Dependencies:**
-    *   Add `google_fonts` for custom typography.
-    *   Add `provider` for state management.
+1.  **Supabase Integration:**
+    *   Add the `supabase_flutter` package.
+    *   Initialize Supabase in `main.dart`.
+    *   Create a Supabase project and get the credentials.
+2.  **UI Development:**
+    *   Create a home screen with a "start assistant" button.
+    *   Create a voice assistant screen with:
+        *   A button to start/stop voice input.
+        *   A display for the conversation transcript.
+        *   A button to enable screen sharing.
+3.  **Voice Input and Speech-to-Text:**
+    *   Add the `speech_to_text` package for microphone input.
+    *   Integrate with a cloud-run serverless speech model for speech-to-text.
+4.  **Text-to-Speech:**
+    *   Add the `flutter_tts` package for text-to-speech output.
+5.  **Google Agent Framework and Gemini:**
+    *   Create a service to interact with the Gemini 3B model via the Google Agent Framework.
+    *   The service will take text and/or screen sharing data as input.
+    *   The service will return text and/or commands.
+6.  **Screen Sharing:**
+    *   Add the `flutter_webrtc` package for screen sharing.
+    *   Capture the screen as a video stream.
+    *   Send the stream to the Gemini service for processing.
+7.  **State Management:**
+    *   Use `provider` or `flutter_bloc` to manage the state of the voice assistant, including:
+        *   Conversation history.
+        *   Assistant status (listening, thinking, speaking).
+        *   Screen sharing status.
+8.  **Memory and Context:**
+    *   Use Supabase to store and retrieve conversation history and user context.
